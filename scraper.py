@@ -16,7 +16,7 @@ def download_url(url):
 
     driver = webdriver.Chrome(executable_path=os.path.abspath("chromedriver"), chrome_options=chrome_options)
 
-    print("Scrapping " + url)
+    print("Scraping " + url)
     tw = []
     driver.get("https://twitter.com/" + url)
 

@@ -100,5 +100,9 @@ ENV/
 # mypy
 .mypy_cache/
 
-#cfg
-.cfg
+# configs
+*.cfg
+
+# result files
+*.txt
+*
