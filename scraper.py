@@ -20,6 +20,9 @@ def download_url(url):
     tw = []
     driver.get("https://twitter.com/" + url)
 
+    if not os.path.exists(url):
+        os.makedirs(url)
+
     with open("./" + url + "/" + 'tweets.txt', 'w', encoding="utf-8") as file_tw:
         try:
             for tweet_index in range(1, 1500):
